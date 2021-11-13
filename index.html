@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Sean</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpy5yE5FoSUyG-zt7vmddTg8jTB7hIWcuhWyvcicM4NFlWGrf_O_0tT1JZOjO3h0qJxlo&usqp=CAU" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body class="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+    <main class="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <img src="./assets/jay_sean_render_by_miroo4design_d6muhhb-fullview (1).png" class="photo">
+        <div class="name-box">
+            <h1 class="name">Jay Sean</h1>
+            <div class="link-buttons">
+                <a target="_blank" class="lk-btn" href="https://open.spotify.com/artist/4pADjHPWyrlAF0FA7joK2H"><img src="./assets/spotify.png" class="lk-btn spotify" /></a>
+                <a target="_blank" class="lk-btn" href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvOWI3ZGFjZGYtYTkyNS00Zjk1LTg0ZGMtYWM0NjAwMzQ1MWZmL2NhYmU3ZmFhLTE0NDktNDJkOC04MmIwLWFjYjgwMDJmZDM5OC9kNzBkOTNjMi05NmEyLTQ4ODQtYTM4MC1hY2I4MDAyZmQzYTIvcG9kY2FzdC5yc3M?sa=X&ved=0CAMQ4aUDahcKEwiY1pvA_pX0AhUAAAAAHQAAAAAQNQ"><img src="https://ceplan.com/wp-content/uploads/2020/10/Google-Podcasts-Logo.png" class="lk-btn google-music" /></a>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <div class="player">
+            <div class="wrapper">
+                <div class="details">
+                    <div class="now-playing">PLAYING x OF y</div>
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" controlsList="nodownload" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" controlsList="nodownload" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+
+                <div class="buttons">
+                    <div class="random-track" onclick="randomTrack()">
+                        <i class="fas fa-random fa-2x" title="random"></i>
+                    </div>
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                    <div class="repeat-track" onclick="repeatTrack()">
+                        <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                    </div>
+                </div>
+
+                <div id="wave">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <div class="card-group ">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://img.discogs.com/--alype-s93wt-lP4jPYZYU3zZQ=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9038644-1473699595-7931.jpeg.jpg" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Greatest Hits
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2017</small></h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71XQfIkBTZL._SS500_.jpg" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            The Mistress, Pt.I&II
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2014</small></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Jay_Sean_Neon.jpg" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Neon
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2013</small></h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/104478fdd42b49e6c90ceb049c21108b.jpg" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            So High
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2012</small></h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/500x500/3ae7e149ef034633b65207a7f99631d8.jpg" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            All or Nothing
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2009</small></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/proxy/UgpeDCOeKSDKUTM6zRvlTsNiKjoqqJDNM8Pnq3eckiH4GfVAOWETdM7__XgiylLfeYidbXmeeie3rk2fqucEz7SPolSKCZjm1Gd4WUeQqdoH" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            My Own Way
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2008</small></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/6/6e/Jay_Jean_-_Me_Against_Myself.jpg" class="card-img-top" alt="1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Me Against Myself
+                        </h5>
+                        <h5 class="card-text"><small class="text-muted">2004</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="text-center text-white">
+        <div class="container pt-4">
+            <section class="mb-4">
+
+                <a target="_blank" class="btn btn-link btn-floating btn-lg text-light m-5" href="https://twitter.com/jaysean" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" class="btn btn-link btn-floating btn-lg text-light m-5" href="https://www.facebook.com/jaysean" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" class="btn btn-link btn-floating btn-lg text-light m-5" href="https://www.youtube.com/channel/UCdfbxcSrqYvM5pqDmTWr1eQ" role="button" data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+                <a target="_blank" class="btn btn-link btn-floating btn-lg text-light m-5" href="https://www.instagram.com/jaysean/" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" class="btn btn-link btn-floating btn-lg text-light m-5" href="https://open.spotify.com/artist/4pADjHPWyrlAF0FA7joK2H" role="button" data-mdb-ripple-color="dark"><i class="fab fa-spotify"></i></a>
+
+            </section>
+
+        </div>
+        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2); color: rgb(255, 255, 255);">
+            © 2021 Copyright:
+            <a target="_blank" class="text" style="color: rgb(255, 255, 255);" href="https://www.instagram.com/therealilyas/">therealilyas.com</a>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
