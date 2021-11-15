@@ -21,12 +21,12 @@ let updateTimer;
 
 const music_list = [{
         img: 'http://4.bp.blogspot.com/-gHvi6lBL46U/T2YUwziIutI/AAAAAAAAAtk/vODA5IRYjK4/s1600/jay-sean-05.jpg',
-        name: 'Stay',
+        name: 'Eyes On You',
         artist: 'Jay Sean',
         music: '../assets/songs/Eyes On You - Me Against Myself.mp3',
     }, {
         img: 'https://upload.wikimedia.org/wikipedia/pt/6/6e/Jay_Jean_-_Me_Against_Myself.jpg',
-        name: 'Stay',
+        name: 'Don\'t Rush',
         artist: 'Jay Sean',
         music: '../assets/songs/Dont Rush.mp3',
     },
